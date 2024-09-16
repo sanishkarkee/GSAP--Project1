@@ -1,0 +1,308 @@
+@font-face {
+  font-family: Product Sans;
+  src: url(Fonts/ProductSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Product Sans B;
+  src: url(Fonts/ProductSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: logo-font;
+  src: url(Fonts/jabberwub.ttf);
+}
+
+// ------------------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Product Sans;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: orangered;
+
+  nav {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+    padding: 0 10vw;
+
+    .center-nav {
+      display: flex;
+      gap: 3vw;
+    }
+
+    a {
+      &.logo-title {
+        font-family: logo-font;
+        font-size: 3vw;
+      }
+    }
+
+    a,
+    i {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 1.5vw;
+    }
+  }
+
+  .one {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(244, 140, 7), rgb(244, 117, 7));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 25vw;
+      font-family: Product Sans B;
+      color: #fff;
+    }
+
+    // --------Images section
+    #fanta {
+      width: 40%;
+
+      position: absolute;
+      z-index: 2;
+
+      // GSAP animation smooth garxa
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    }
+
+    #orange-cut {
+      width: 12%;
+
+      position: absolute;
+      top: 12%;
+      left: 35%;
+      z-index: 1;
+
+      // GSAP animation smooth garxa
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    }
+
+    #orange {
+      width: 15%;
+
+      position: absolute;
+      z-index: 3;
+      top: 56%;
+      right: 35%;
+
+      // GSAP animation smooth garxa
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    }
+
+    #leaf {
+      width: 10%;
+
+      position: absolute;
+      top: 10%;
+      left: 3%;
+      transform: rotate(40deg);
+
+      // GSAP animation smooth garxa
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    }
+
+    #leaf2 {
+      width: 15%;
+
+      position: absolute;
+      top: 68%;
+      left: 80%;
+      transform: rotate(253deg);
+
+      // GSAP animation smooth garxa
+      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    }
+
+    #leaf3 {
+      width: 20%;
+
+      position: absolute;
+      top: 10%;
+      right: 0;
+    }
+  }
+
+  .two {
+    width: 100%;
+    height: 100vh;
+    background: #4d231c;
+
+    display: flex;
+
+    .left-two {
+      svg {
+        // width: 90%;
+        // transform: rotateX(50deg);
+
+        // margin-top: 50vh;
+
+        width: 100%;
+
+        transform: rotateX(73deg);
+        margin-top: 50vh;
+      }
+    }
+
+    .right-two {
+      h1 {
+        color: #fff;
+        font-size: 5vw;
+      }
+
+      p {
+        width: 80%;
+        color: #fff;
+        font-size: 1vw;
+      }
+    }
+
+    .left-two,
+    .right-two {
+      width: 50%;
+      height: 100%;
+
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5vh;
+    }
+  }
+
+  .three {
+    width: 100%;
+    height: 100vh;
+    // background: #4d231c;
+    background: pink;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+
+    // gsap animation grda overflow aauxa so tyo kura hatauna lai
+    overflow-x: hidden;
+
+    .card {
+      position: relative;
+      width: 25vw;
+      height: 70vh;
+      margin-top: 10vh;
+      border-radius: 20px;
+      background-color: #fff;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2vh;
+
+      h1 {
+        font-size: 3vw;
+        margin-top: 40vh;
+        color: #fff;
+      }
+
+      button {
+        padding: 1vw 2vw;
+        font-size: 1vw;
+        border-radius: 50px;
+        border: 1px solid #fff;
+
+        cursor: pointer;
+      }
+
+      #sprite {
+        width: 60%;
+        position: absolute;
+        top: -8%;
+        left: 20%;
+
+        // GSAP animation smooth garxa
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+      }
+
+      #lipton {
+        width: 45%;
+        position: absolute;
+        top: -8%;
+        right: 32%;
+
+        // GSAP animation smooth garxa
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+      }
+
+      .lemon {
+        width: 80%;
+        position: absolute;
+        top: -30%;
+        left: 10%;
+
+        // GSAP animation smooth garxa
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+      }
+
+      .peach {
+        width: 80%;
+        position: absolute;
+        top: -30%;
+        right: 11%;
+
+        // GSAP animation smooth garxa
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+      }
+
+      &:nth-of-type(1) {
+        background-color: #008b47;
+
+        button {
+          color: #008b47;
+        }
+      }
+
+      &:nth-of-type(2) {
+        background-color: #ff7c20;
+
+        button {
+          color: #ff7c20;
+        }
+      }
+
+      &:nth-of-type(3) {
+        background-color: #e8c507;
+
+        button {
+          color: #e8c507;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: Product Sans;
+  src: url(Fonts/ProductSans-Regular.ttf);
+}
+@font-face {
+  font-family: Product Sans B;
+  src: url(Fonts/ProductSans-Bold.ttf);
+}
+@font-face {
+  font-family: logo-font;
+  src: url(Fonts/jabberwub.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Product Sans;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: orangered;
+}
+#main nav {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  padding: 0 10vw;
+}
+#main nav .center-nav {
+  display: flex;
+  gap: 3vw;
+}
+#main nav a.logo-title {
+  font-family: logo-font;
+  font-size: 3vw;
+}
+#main nav a,
+#main nav i {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+#main nav i {
+  font-size: 1.5vw;
+}
+#main .one {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(244, 140, 7), rgb(244, 117, 7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main .one h1 {
+  font-size: 25vw;
+  font-family: Product Sans B;
+  color: #fff;
+}
+#main .one #fanta {
+  width: 40%;
+  position: absolute;
+  z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .one #orange-cut {
+  width: 12%;
+  position: absolute;
+  top: 12%;
+  left: 35%;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .one #orange {
+  width: 15%;
+  position: absolute;
+  z-index: 3;
+  top: 56%;
+  right: 35%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .one #leaf {
+  width: 10%;
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  transform: rotate(40deg);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .one #leaf2 {
+  width: 15%;
+  position: absolute;
+  top: 68%;
+  left: 80%;
+  transform: rotate(253deg);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .one #leaf3 {
+  width: 20%;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+#main .two {
+  width: 100%;
+  height: 100vh;
+  background: #4d231c;
+  display: flex;
+}
+#main .two .left-two svg {
+  width: 100%;
+  transform: rotateX(73deg);
+  margin-top: 50vh;
+}
+#main .two .right-two h1 {
+  color: #fff;
+  font-size: 5vw;
+}
+#main .two .right-two p {
+  width: 80%;
+  color: #fff;
+  font-size: 1vw;
+}
+#main .two .left-two,
+#main .two .right-two {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+#main .three {
+  width: 100%;
+  height: 100vh;
+  background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  overflow-x: hidden;
+}
+#main .three .card {
+  position: relative;
+  width: 25vw;
+  height: 70vh;
+  margin-top: 10vh;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+#main .three .card h1 {
+  font-size: 3vw;
+  margin-top: 40vh;
+  color: #fff;
+}
+#main .three .card button {
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+#main .three .card #sprite {
+  width: 60%;
+  position: absolute;
+  top: -8%;
+  left: 20%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .three .card #lipton {
+  width: 45%;
+  position: absolute;
+  top: -8%;
+  right: 32%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .three .card .lemon {
+  width: 80%;
+  position: absolute;
+  top: -30%;
+  left: 10%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .three .card .peach {
+  width: 80%;
+  position: absolute;
+  top: -30%;
+  right: 11%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+#main .three .card:nth-of-type(1) {
+  background-color: #008b47;
+}
+#main .three .card:nth-of-type(1) button {
+  color: #008b47;
+}
+#main .three .card:nth-of-type(2) {
+  background-color: #ff7c20;
+}
+#main .three .card:nth-of-type(2) button {
+  color: #ff7c20;
+}
+#main .three .card:nth-of-type(3) {
+  background-color: #e8c507;
+}
+#main .three .card:nth-of-type(3) button {
+  color: #e8c507;
+}/*# sourceMappingURL=style.css.map */
